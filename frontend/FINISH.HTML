@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the amazing Spider-Man world - movies, characters, and comics all in one place.">
+    <meta name="keywords" content="Spider-Man, Marvel, comics, movies, characters, superheroes">
+    <!--website name-->
+    <title>SpiderMan website</title>
+    <!--linking the stylesheet-->
+    <link rel="stylesheet" href="finish.css">
+    <!--adding website icon-->
+    <link rel="icon" href="Images/Spider-Man Old.png" type="image/png">
+    <!--adding diffrent google fonts-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Protest+Guerrilla&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <!--for the navigation bar-->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!--script for navigation bar logic-->
+    <script>
+        function goToSignIn() {
+            alert("Redirecting to Sign In page!"); 
+        }
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    document.getElementById('check').checked = false;
+                });
+            });
+        });
+    </script>
+
+</head>
+<body id="home" class="page hidden">
+
+    <!--navigation bar link-->
+        <div class="navbar">
+            <!--for responsive layout (tablet and phone)-->
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="btn"></i> 
+                <i class="fas fa-times" id="cancel"></i> 
+            </label>
+          <!--logo part-->
+            <div class="logo">
+                <img src="Images/Spider-Man Old.png" alt="Logo">
+            </div>
+            <!--nav bar links-->
+            <div class="nav-links">
+              <a href="#About">About</a>
+              <a href="#Movies">Movies</a>
+              <a href="#Character">Characters</a>
+              <a href="#Comics">Comics</a>
+              <a href="#Contacts">Contact</a>
+            </div>
+            <!--sign in button-->
+            <button class="sign-in-btn" onclick="goToSignIn()">Sign In</button>
+        </div>
+
+    <!-- Video Section -->
+<div class="video-container" >
+    <video autoplay muted loop>
+        <source src="Images/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="text-overlay">
+        <h1>Spider-Man Movie</h1>
+        <p>Explore the world of Spider-Man, his thrilling adventures, and iconic moments, all in one place. </p>
+    </div>
+</div>
+
+<!--about section-->
+<section class="about-page" id="About">
+    <div class="content-wrapper">
+      <div class="text-section">
+        <h1>About This Page</h1>
+        <p>
+          This page is made with love for Spider-Man fans. Dive into the fascinating world of Spider-Man, where you can explore every movie, book, and even some iconic characters through our website.
+        </p>
+        <button class="explore-btn">Explore More</button>
+      </div>
+      <div class="image-section">
+        <img src="Images/whitespider.png" alt="Spider-Man White Suit">
+      </div>
+    </div>
+
+    <!-- Section 1 -->
+    <section class="section" id="Movies">
+        <div class="title"> 
+            <h1>Movies</h1>
+        </div>
+        <div class="banner">
+            <div class="slider" style="--quantity: 10">
+                <div class="item" style="--position: 1"><img src="posters/1.jpeg" alt="poster1"></div>
+                <div class="item" style="--position: 2"><img src="posters/2.jpeg" alt="poster2"></div>
+                <div class="item" style="--position: 3"><img src="posters/3.jpeg" alt="poster3"></div>
+                <div class="item" style="--position: 4"><img src="posters/4.jpeg" alt="poster4"></div>
+                <div class="item" style="--position: 5"><img src="posters/5.jpeg" alt="poster5"></div>
+                <div class="item" style="--position: 6"><img src="posters/6.jpeg" alt="poster6"></div>
+                <div class="item" style="--position: 7"><img src="posters/7.jpeg" alt="poster7"></div>
+                <div class="item" style="--position: 8"><img src="posters/8.jpeg" alt="poster8"></div>
+                <div class="item" style="--position: 9"><img src="posters/9.jpeg" alt="poster9"></div>
+                <div class="item" style="--position: 10"><img src="posters/10.jpeg" alt="poster10"></div>
+            </div>
+            <div class="content">
+                <h1 data-content="CSS ONLY"></h1>
+                <div class="author">
+                    <h2></h2>
+                    <p><b>Spider-Man</b></p>
+                    <p>All spider man movies in this website and more..</p>
+                </div>
+                <div class="model"></div>
+            </div>
+        </div>
+    </section>
+
+<!-- Section 2 -->
+<section class="section" id="Character">
+    <div class="title"> 
+        <h1>Characters</h1>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="content">
+                <h3>Spiderman</h3>
+                <p>Spider-Man is one of the most iconic superheroes, loved by audiences worldwide. The movie follows Peter Parker, a high school student who gains superhuman abilities after being bitten by a radioactive spider.</p>
+                <button class="read-button">Read More..</button>
+            </div>
+            <img src="Images/animation.png" alt="Spiderman">
+        </div>
+        <div class="card">
+            <div class="content">
+                <h3>Black spider-man</h3>
+                <p>The black-suited Spider-Man, first introduced during the Secret Wars storyline, represents Peter Parker's darker side after bonding with an alien symbiote that enhances his abilities but corrupts his behavior.</p>
+                <button class="read-button">Read More..</button>
+            </div>
+            <img src="Images/black.png" alt="black spider-man">
+        </div>
+    </div>
+</section>
+
+<!-- Section 3 -->
+<section class="section" id="Comics">
+    <div class="title"> 
+        <h1>Books posters</h1>
+    </div>
+    <div class="book-container">
+        <!-- Book 1 -->
+        <div class="book-item">
+            <div class="book">
+                <img alt="Book 1" src="https://i.pinimg.com/736x/02/fc/3a/02fc3a4bde89ac2bc049fc867a6e9f39.jpg" />
+            </div>
+            <div class="caption">
+                <h2>The Amazing Spider-Man</h2>
+                <p>The origin story of Peter Parker as he learns the responsibility that comes with his powers.</p>
+            </div>
+        </div>
+        <!-- Book 2 -->
+        <div class="book-item">
+            <div class="book">
+                <img alt="Book 2" src="https://i.pinimg.com/736x/cc/d0/e7/ccd0e7e5ff7844bc59b2d9590defaf83.jpg" />
+            </div>
+            <div class="caption">
+                <h2>Marvel Action Spider-Man</h2>
+                <p>A fun and dynamic retelling of Spider-Man’s adventures for younger readers.</p>
+            </div>
+        </div>
+        <!-- Book 3 -->
+        <div class="book-item">
+            <div class="book">
+                <img alt="Book 3" src="https://i.pinimg.com/736x/ae/85/ca/ae85ca5c2df5a2b45cbff82654ffeddd.jpg" />
+            </div>
+            <div class="caption">
+                <h2>The Spectacular Spider-Man</h2>
+                <p>Focused on Peter Parker's personal life, balancing his role as a hero and an everyday man.</p>
+            </div>
+        </div>
+        <!-- Book 4 -->
+        <div class="book-item">
+            <div class="book">
+                <img alt="The Outstanding Developer by Sebastien Castiel" src="https://i.pinimg.com/736x/3f/19/ba/3f19ba953d4cd26449c5f7f60ae14408.jpg" />
+            </div>
+            <div class="caption">
+                <h2>The Outstanding Developer</h2>
+                <p>A guide to mastering coding and developer techniques by Sebastien Castiel.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--footer-->
+<footer class="footer" id="Contacts">
+    <div class="wave-container">
+        <canvas id="waveCanvas"></canvas>
+    </div>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="Images/logo.png" alt="Marvel Logo" />
+        </div>
+        <div class="footer-text">
+            <p>Explore the world of Marvel.<br><br>
+                Discover your favorite spider-man movies, <br><br>
+                stories, and comics.</p>
+        </div>
+        <div class="footer-social-media">
+            <p>Follow us on social media</p>
+            <img src="Images/Social.png" alt="Social Media Icons" class="social-media-icons">
+        </div>
+    </div>
+</footer>
+
+<!--java script files-->
+<script src="java.js"></script>
+<script>
+    function goToSignIn() {
+        window.location.href = "index.html";
+    }
+</script>
+
+  </script>
+</body>
+</html>
